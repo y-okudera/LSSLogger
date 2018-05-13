@@ -51,7 +51,7 @@ public enum DestinationOfTheLog {
     case consoleAndFile
 }
 
-final class LSSLogger {
+public final class LSSLogger {
 
     private static let defaultLogRotationCount: UInt = 10
     public static let console = LSSLogger()
