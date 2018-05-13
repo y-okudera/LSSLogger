@@ -54,9 +54,21 @@ public enum DestinationOfTheLog {
 public final class LSSLogger {
 
     private static let defaultLogRotationCount: UInt = 10
+
+    /// Output to console.
     public static let console = LSSLogger()
+
+    /// Output to log file.
+    ///
+    /// LogFilePath: ~/Documents/DAILY_LOG/yyyy_MM_dd.log
     public static let file = LSSLogger(destination: .file)
+
+    /// Output to console and log file.
+    ///
+    /// LogFilePath: ~/Documents/DAILY_LOG/yyyy_MM_dd.log
     public static let consoleAndFile = LSSLogger(destination: .consoleAndFile)
+
+    /// Log file rotate count.
     public static var logRotationCount: UInt = defaultLogRotationCount
 
     private let destination: DestinationOfTheLog
@@ -71,10 +83,10 @@ public final class LSSLogger {
     }
 
     /// Debug log.
+    ///
+    /// Debug logs are not output to files.
     public func debug(message: String = "", function: String = #function, file: String = #file, line: Int = #line) {
-        #if DEBUG
         write(loglevel: .debug, message: message, function: function, file: file, line: line)
-        #endif
     }
 
     /// Info log.
@@ -158,6 +170,8 @@ public final class LSSLogger {
     }
 
     /// When the destination is .file or .consoleAndFile, output log to file.
+    ///
+    /// Debug logs are not output.
     private func writeToFile(date: String,
                              loglevel: LogLevel,
                              message: String,
@@ -166,6 +180,10 @@ public final class LSSLogger {
                              line: Int) {
 
         if destination == .console {
+            return
+        }
+
+        if loglevel == .debug {
             return
         }
 
