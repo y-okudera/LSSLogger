@@ -11,14 +11,34 @@ Swift Version 4.1 or more
 
 ## Installation
 
-### Podfile
+### CocoaPods
+
+To integrate LSSLogger into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-target 'TargetName' do
+platform :ios, '9.0'
 use_frameworks!
-pod "LSSLogger"
+
+target '<TargetName>' do
+    pod "LSSLogger"
 end
 ```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+### Carthage
+
+To integrate LSSLogger into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "stv-yokudera/LSSLogger" ~> 1.0
+```
+
+Run `carthage update` to build the framework and drag the built `LSSLogger.framework` into your Xcode project.
 
 ## Usage
 
