@@ -40,6 +40,34 @@ github "stv-yokudera/LSSLogger" ~> 1.0
 
 Run `carthage update` to build the framework and drag the built `LSSLogger.framework` into your Xcode project.
 
+## Setup
+
+By default, whether to output logs is as follows:
+
+|LogLevel|DEBUG|INFO|WARNING|ERROR|FATAL|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|Output to console|◯|◯|◯|◯|◯|
+|Output to log file|×|◯|◯|◯|◯|
+
+When you don't want to output the log in the release build, In AppDelegate, set as follows:
+
+```swift:AppDelegate.swift
+func application(_ application: UIApplication,
+                 didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    // Override point for customization after application launch.
+
+    #if RELEASE
+    // For release builds, logs aren't output to the console.
+    LSSLogger.outputToConsoleEnabled(isEnabled: false)
+
+    // For release builds, logs aren't output to the files.
+    LSSLogger.outputToFileEnabled(isEnabled: false)
+    #endif
+
+    return true
+}
+```
+
 ## Usage
 
 ```swift
