@@ -68,6 +68,9 @@ func application(_ application: UIApplication,
 }
 ```
 
+And, Active Compilation Conditions is as follows:
+<img width="926" alt="2018-05-15 0 23 38" src="https://user-images.githubusercontent.com/25205138/40007027-c19b612e-57d6-11e8-897c-7d5af8431378.png">
+
 ## Usage
 
 ```swift
