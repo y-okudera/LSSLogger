@@ -71,6 +71,12 @@ public final class LSSLogger {
     /// Log file rotate count.
     public static var logRotationCount: UInt = defaultLogRotationCount
 
+    /// Whether to output logs to console.
+    public static var outputToConsoleEnabled = true
+
+    /// Whether to output logs to file.
+    public static var outputToFileEnabled = true
+
     private let destination: DestinationOfTheLog
 
     private init(destination: DestinationOfTheLog = .console) {
@@ -80,6 +86,16 @@ public final class LSSLogger {
     /// Set the log rotation count.
     public static func configureLogRotationCount(count: UInt) {
         LSSLogger.logRotationCount = count
+    }
+
+    /// Sets whether to output logs to the console or not.
+    public static func outputToConsoleEnabled(isEnabled: Bool) {
+        LSSLogger.outputToConsoleEnabled = isEnabled
+    }
+
+    /// Sets whether to output logs to the file or not.
+    public static func outputToFileEnabled(isEnabled: Bool) {
+        LSSLogger.outputToFileEnabled = isEnabled
     }
 
     /// Debug log.
@@ -152,6 +168,10 @@ public final class LSSLogger {
                                 line: Int,
                                 emoji: String) {
 
+        if !LSSLogger.outputToConsoleEnabled {
+            return
+        }
+
         if destination == .file {
             return
         }
@@ -178,6 +198,10 @@ public final class LSSLogger {
                              function: String,
                              filename: String,
                              line: Int) {
+
+        if !LSSLogger.outputToFileEnabled {
+            return
+        }
 
         if destination == .console {
             return
