@@ -20,6 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set the log rotation count. (default: 10files)
         LSSLogger.configureLogRotationCount(count: 5)
 
+        #if RELEASE
+
+        // For release builds, logs are not output to the console.
+        LSSLogger.outputToConsoleEnabled(isEnabled: false)
+
+        // For release builds, logs are not output to files.
+        LSSLogger.outputToFileEnabled(isEnabled: false)
+        #endif
+
         return true
     }
 
