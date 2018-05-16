@@ -96,6 +96,10 @@ func debugLogDemo() {
 }
 ```
 
+本ライブラリについて、Qiitaにも記事を書きました。（Qiitaの記事は、全て日本語で書いています。）
+https://qiita.com/okuderap/items/75f11230746eea59c695
+
+
 ## Author
 
 YukiOkudera, appledev.yuoku@gmail.com
