@@ -7,7 +7,7 @@ A Lightweight and simple Swifty Logger.
 [![Platform](https://img.shields.io/cocoapods/p/LSSLogger.svg?style=flat)](http://cocoapods.org/pods/LSSLogger)
 
 ## Requirements
-Swift Version 4.1 or more
+Swift Version 5.0 or more
 
 ## Installation
 
@@ -16,7 +16,7 @@ Swift Version 4.1 or more
 To integrate LSSLogger into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-platform :ios, '9.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target '<TargetName>' do
@@ -35,7 +35,7 @@ $ pod install
 To integrate LSSLogger into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "stv-yokudera/LSSLogger" ~> 1.0
+github "y-okudera/LSSLogger" ~> 2.0
 ```
 
 Run `carthage update` to build the framework and drag the built `LSSLogger.framework` into your Xcode project.
@@ -53,17 +53,19 @@ When you don't want to output the log in the release build, In AppDelegate, set 
 
 ```swift:AppDelegate.swift
 func application(_ application: UIApplication,
-                 didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
-
+                 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    // Set the log rotation count. (default: 10files)
+    LSSLogger.configureLogRotationCount(count: 5)
+    
     #if RELEASE
-    // For release builds, logs aren't output to the console.
+    
+    // For release builds, logs are not output to the console.
     LSSLogger.outputToConsoleEnabled(isEnabled: false)
-
-    // For release builds, logs aren't output to the files.
+    
+    // For release builds, logs are not output to files.
     LSSLogger.outputToFileEnabled(isEnabled: false)
     #endif
-
+    
     return true
 }
 ```
