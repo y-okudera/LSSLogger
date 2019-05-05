@@ -35,6 +35,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64D236A2227EB4B4005B1900 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B661447520A863E500D5E73B /* Date+Helper.swift */,
+				B661447320A863B500D5E73B /* String+Directory.swift */,
+				B661447120A8637100D5E73B /* String+Path.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B661444B20A8623700D5E73B = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +64,10 @@
 		B661445720A8623700D5E73B /* LSSLogger */ = {
 			isa = PBXGroup;
 			children = (
-				B661445820A8623700D5E73B /* LSSLogger.h */,
+				64D236A2227EB4B4005B1900 /* Extensions */,
 				B661445920A8623700D5E73B /* Info.plist */,
+				B661445820A8623700D5E73B /* LSSLogger.h */,
 				B661446F20A8632500D5E73B /* LSSLogger.swift */,
-				B661447520A863E500D5E73B /* Date+Helper.swift */,
-				B661447320A863B500D5E73B /* String+Directory.swift */,
-				B661447120A8637100D5E73B /* String+Path.swift */,
 			);
 			path = LSSLogger;
 			sourceTree = "<group>";
@@ -108,7 +116,7 @@
 				TargetAttributes = {
 					B661445420A8623700D5E73B = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -118,6 +126,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B661444B20A8623700D5E73B;
 			productRefGroup = B661445620A8623700D5E73B /* Products */;
@@ -206,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -263,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -287,7 +296,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LSSLogger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +306,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,7 +324,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LSSLogger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.LSSLogger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

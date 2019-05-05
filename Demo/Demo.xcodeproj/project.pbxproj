@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64D236A9227EB9E7005B1900 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D236A5227EB9E6005B1900 /* String+Path.swift */; };
+		64D236AA227EB9E7005B1900 /* String+Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D236A6227EB9E6005B1900 /* String+Directory.swift */; };
+		64D236AB227EB9E7005B1900 /* Date+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D236A7227EB9E6005B1900 /* Date+Helper.swift */; };
+		64D236AC227EB9E7005B1900 /* LSSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D236A8227EB9E7005B1900 /* LSSLogger.swift */; };
 		B6678F8520A8753C001784A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6678F8420A8753C001784A1 /* AppDelegate.swift */; };
 		B6678F8720A8753C001784A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6678F8620A8753C001784A1 /* ViewController.swift */; };
 		B6678F8A20A8753C001784A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6678F8820A8753C001784A1 /* Main.storyboard */; };
 		B6678F8C20A8753E001784A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6678F8B20A8753E001784A1 /* Assets.xcassets */; };
 		B6678F8F20A8753E001784A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6678F8D20A8753E001784A1 /* LaunchScreen.storyboard */; };
-		B6678FAA20A88B69001784A1 /* LSSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6678FA420A88B69001784A1 /* LSSLogger.swift */; };
-		B6678FAB20A88B69001784A1 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6678FA520A88B69001784A1 /* String+Path.swift */; };
-		B6678FAC20A88B69001784A1 /* String+Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6678FA620A88B69001784A1 /* String+Directory.swift */; };
-		B6678FAD20A88B69001784A1 /* Date+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6678FA820A88B69001784A1 /* Date+Helper.swift */; };
-		B6678FAE20A88B69001784A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6678FA920A88B69001784A1 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64D236A3227EB9E6005B1900 /* LSSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSLogger.h; sourceTree = "<group>"; };
+		64D236A5227EB9E6005B1900 /* String+Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
+		64D236A6227EB9E6005B1900 /* String+Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Directory.swift"; sourceTree = "<group>"; };
+		64D236A7227EB9E6005B1900 /* Date+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Helper.swift"; sourceTree = "<group>"; };
+		64D236A8227EB9E7005B1900 /* LSSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSLogger.swift; sourceTree = "<group>"; };
 		B6678F8120A8753C001784A1 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6678F8420A8753C001784A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6678F8620A8753C001784A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,12 +31,6 @@
 		B6678F8B20A8753E001784A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6678F8E20A8753E001784A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6678F9020A8753E001784A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6678FA420A88B69001784A1 /* LSSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSLogger.swift; sourceTree = "<group>"; };
-		B6678FA520A88B69001784A1 /* String+Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
-		B6678FA620A88B69001784A1 /* String+Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Directory.swift"; sourceTree = "<group>"; };
-		B6678FA720A88B69001784A1 /* LSSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSLogger.h; sourceTree = "<group>"; };
-		B6678FA820A88B69001784A1 /* Date+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Helper.swift"; sourceTree = "<group>"; };
-		B6678FA920A88B69001784A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64D236A4227EB9E6005B1900 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64D236A5227EB9E6005B1900 /* String+Path.swift */,
+				64D236A6227EB9E6005B1900 /* String+Directory.swift */,
+				64D236A7227EB9E6005B1900 /* Date+Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B6678F7820A8753C001784A1 = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +87,9 @@
 		B6678FA320A88B69001784A1 /* LSSLogger */ = {
 			isa = PBXGroup;
 			children = (
-				B6678FA420A88B69001784A1 /* LSSLogger.swift */,
-				B6678FA520A88B69001784A1 /* String+Path.swift */,
-				B6678FA620A88B69001784A1 /* String+Directory.swift */,
-				B6678FA720A88B69001784A1 /* LSSLogger.h */,
-				B6678FA820A88B69001784A1 /* Date+Helper.swift */,
-				B6678FA920A88B69001784A1 /* Info.plist */,
+				64D236A4227EB9E6005B1900 /* Extensions */,
+				64D236A3227EB9E6005B1900 /* LSSLogger.h */,
+				64D236A8227EB9E7005B1900 /* LSSLogger.swift */,
 			);
 			name = LSSLogger;
 			path = ../../LSSLogger;
@@ -148,7 +153,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6678FAE20A88B69001784A1 /* Info.plist in Resources */,
 				B6678F8F20A8753E001784A1 /* LaunchScreen.storyboard in Resources */,
 				B6678F8C20A8753E001784A1 /* Assets.xcassets in Resources */,
 				B6678F8A20A8753C001784A1 /* Main.storyboard in Resources */,
@@ -162,12 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D236AA227EB9E7005B1900 /* String+Directory.swift in Sources */,
 				B6678F8720A8753C001784A1 /* ViewController.swift in Sources */,
+				64D236AC227EB9E7005B1900 /* LSSLogger.swift in Sources */,
 				B6678F8520A8753C001784A1 /* AppDelegate.swift in Sources */,
-				B6678FAA20A88B69001784A1 /* LSSLogger.swift in Sources */,
-				B6678FAC20A88B69001784A1 /* String+Directory.swift in Sources */,
-				B6678FAB20A88B69001784A1 /* String+Path.swift in Sources */,
-				B6678FAD20A88B69001784A1 /* Date+Helper.swift in Sources */,
+				64D236AB227EB9E7005B1900 /* Date+Helper.swift in Sources */,
+				64D236A9227EB9E7005B1900 /* String+Path.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -298,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
@@ -315,14 +319,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8PR34D6DP;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -334,14 +338,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8PR34D6DP;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
